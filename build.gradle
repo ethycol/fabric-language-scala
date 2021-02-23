@@ -31,13 +31,10 @@ dependencies {
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-    //These are the deps included with the scala adapter, if you think you have a good dep that would be a nice fit please open an issue.
-    shadow "org.scala-lang:scala-library:${project.scala_version}"
-    shadow "org.scala-lang:scala-reflect:${project.scala_version}"
-    shadow "org.scala-lang:scala-compiler:${project.scala_version}"
-	shadow "org.scala-lang.modules:scala-java8-compat_2.13:0.9.1"
+    shadow "org.scala-lang:scala3-library_3.0.0-RC1:${project.scala_version}"
+    shadow "org.scala-lang:scala3-compiler_3.0.0-RC1:${project.scala_version}"
 
-    testCompile "org.scala-lang:scala-library:${project.scala_version}"
+    testCompile "org.scala-lang:scala3-library_3.0.0-RC1:${project.scala_version}"
 }
 
 processResources {
